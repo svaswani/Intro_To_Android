@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 public class ListActivity extends AppCompatActivity {
 
-    private String[] listArray = { "Baby Pug", "Turtle With Strawberry"};
+    private String[] listArray = { "Baby Pug", "Turtle With Strawberry", "Duck"};
 
     private ListView list;
     private ArrayAdapter<String> arrayAdapter;
@@ -35,9 +35,23 @@ public class ListActivity extends AppCompatActivity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(getApplicationContext(), ImageActivity.class);
-                intent.putExtra("string-array", listArray);
-                startActivity(intent);
+
+                if (position == 0)
+                {
+                    Intent intent = new Intent(getApplicationContext(), ImageActivity.class);
+                    startActivity(intent);
+                }
+                if (position == 1)
+                {
+                    Intent intent = new Intent(getApplicationContext(), ImageActivity2.class);
+                    startActivity(intent);
+                }
+                if (position == 2)
+                {
+                    Intent intent = new Intent(getApplicationContext(), ImageActivity3.class);
+                    startActivity(intent);
+                }
+
             }
         });
     }

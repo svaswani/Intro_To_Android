@@ -2,4 +2,6 @@
     <string name="app_name">Intro_To_Android</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_image2">ImageActivity2</string>
+    <string name="title_activity_image3">ImageActivity3</string>
 </resources>

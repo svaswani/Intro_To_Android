@@ -7,13 +7,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_image"
-    tools:context="com.example.svaswani.intro_to_android.ImageActivity">
+    tools:showIn="@layout/activity_image2"
+    tools:context="com.example.svaswani.intro_to_android.ImageActivity2">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:src="@drawable/babypug"/>
+        android:id="@+id/imageView2"
+        android:src="@drawable/turtlewithstrawberry"/>
 
 </RelativeLayout>
