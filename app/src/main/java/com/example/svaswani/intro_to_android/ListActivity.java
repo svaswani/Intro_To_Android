@@ -28,6 +28,7 @@ public class ListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setTitle("My First ListView");
             list = (ListView) findViewById(R.id.list);
             arrayAdapter = new ArrayAdapter<String>(getApplicationContext(),R.layout.my_text_view, R.id.text1, listArray);
             list.setAdapter(arrayAdapter);
@@ -36,22 +37,10 @@ public class ListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                if (position == 0)
-                {
-                    Intent intent = new Intent(getApplicationContext(), ImageActivity.class);
-                    startActivity(intent);
-                }
-                if (position == 1)
-                {
-                    Intent intent = new Intent(getApplicationContext(), ImageActivity2.class);
-                    startActivity(intent);
-                }
-                if (position == 2)
-                {
-                    Intent intent = new Intent(getApplicationContext(), ImageActivity3.class);
-                    startActivity(intent);
-                }
-
+                Intent intent = new Intent(getApplicationContext(), ImageActivity.class);
+                //intent.setAction("Image Action");
+                intent.putExtra("Images", listArray[position]);
+                startActivity(intent);
             }
         });
     }
