@@ -11,10 +11,8 @@
     tools:context="com.example.svaswani.intro_to_android.ImageActivity">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"/>
-        <!--android:src="@drawable/abc_btn_default_mtrl_shape"-->
-
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
