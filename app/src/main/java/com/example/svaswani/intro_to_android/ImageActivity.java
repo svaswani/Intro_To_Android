@@ -31,6 +31,34 @@ public class ImageActivity extends AppCompatActivity {
         {
             imageView.setImageResource(R.drawable.duck);
         }
+        else if (image.equals("Spanks"))
+        {
+            imageView.setImageResource(R.drawable.spanks);
+        }
+        else if (image.equals("Tanat"))
+        {
+            imageView.setImageResource(R.drawable.tanat);
+        }
+        else if (image.equals("Alex"))
+        {
+            imageView.setImageResource(R.drawable.alex);
+        }
+        else if (image.equals("Stu-fart"))
+        {
+            imageView.setImageResource(R.drawable.stufart);
+        }
+        else if (image.equals("Sam"))
+        {
+            imageView.setImageResource(R.drawable.sam);
+        }
+        else if (image.equals("Ricky"))
+        {
+            imageView.setImageResource(R.drawable.ricky);
+        }
+        else if (image.equals("Young Money"))
+        {
+            imageView.setImageResource(R.drawable.youngmoney);
+        }
     }
 
 }

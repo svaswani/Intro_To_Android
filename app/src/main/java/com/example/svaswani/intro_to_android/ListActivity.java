@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 public class ListActivity extends AppCompatActivity {
 
-    private String[] listArray = { "Baby Pug", "Turtle With Strawberry", "Duck"};
+    private String[] listArray = { "Baby Pug", "Turtle With Strawberry", "Duck", "Spanks", "Tanat", "Alex", "Stu-fart", "Sam", "Ricky", "Young Money"};
 
     private ListView list;
     private ArrayAdapter<String> arrayAdapter;
